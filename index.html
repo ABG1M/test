@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://telegram.org/js/telegram-web-app.js?1"></script>
+</head>
+<body>
+    <h1>This is ABG</h1>
+    <div>
+        <button id="main_btn">«Close WebApp!»</button>
+    </div>
+    <script type="application/javascript">
+        btn = document.getElementById("main_btn")
+
+        btn.addEventListener("click", function(){
+            Telegram.WebApp.close();
+        });
+    </script>
+</body>
+</html>
